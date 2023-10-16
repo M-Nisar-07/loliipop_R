@@ -6,4 +6,4 @@ RUN R -e "install.packages('aws.s3')"
 RUN R -e "install.packages('aws.ec2metadata')"
 COPY . /app
 
-CMD ["/app/plumber.R"]
+ENTRYPOINT ["Rscript", "plumber.R"]
