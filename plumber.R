@@ -5,14 +5,14 @@ library(trackViewer)
 
 
 #* @serializer svg
-#* @post /lollipop
+#* @post /get_lollipop
 #* @param range_
 #* @param width_
 #* @param height_
 #* @param color_
 #* @param object_id
 #* @param seql
-get_lollipop(range_,width_,height_,color_,object_id,seql){
+function(range_,width_,height_,color_,object_id,seql){
 
   range_ <- as.integer(range_)
   width_ <- as.integer(width_)
