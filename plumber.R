@@ -2,7 +2,7 @@ library(jsonlite)
 library(aws.s3)
 library(aws.ec2metadata)
 library(trackViewer)
-
+library(plumber)
 
 #* @serializer svg
 #* @post /get_lollipop
